@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../font/Merriweather-Bold.eot');
+	src: local('☺'), url('../font/Merriweather-Bold.woff') format('woff'), url('../font/Merriweather-Bold.ttf') format('truetype'), url('../font/Merriweather-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
