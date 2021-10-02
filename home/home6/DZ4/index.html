@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            float: left;
+        }
+        p {
+            float: right;
+            display: inline-block;
+            background: url(img/star0.png) 0 0 no-repeat;
+            width: 100px;
+            height: 100px;
+        }
+        p:hover, p:hover ~ p {
+            background: url(img/star1.png) 0 0 no-repeat;
+            width: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>

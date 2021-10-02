@@ -1,0 +1,47 @@
+
+a {
+    display: inline-block;
+    color: green;
+    font-size: 36px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: red;
+}
+
+.link_one a {
+    border-right: solid red 5px;
+    padding: 15px 30px 40px 30px;
+}
+
+.link_one a:last-child {
+    border: none;
+}
+
+li {
+    display: inline-block;
+    padding: 15px 0px 40px 30px;
+}
+
+
+.link_two li:nth-child(-n+4):after {
+    content: '';
+    background: red;
+    width: 5px;
+    height: 96px;
+    display: inline-block;
+    margin-left: 30px;
+    padding-right: 0;
+}
+
+.link_third a {
+    padding: 15px 0px 40px 30px;
+}
+
+.link_third a:nth-child(-n+4)::after {
+    content: url(img/red.png);
+    margin-left: 30px;
+}
+

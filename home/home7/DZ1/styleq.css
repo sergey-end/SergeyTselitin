@@ -1,0 +1,53 @@
+a {
+    color: rgb(60,57,213);
+    font-size: 20px;
+    word-wrap: break-word;
+    font-size: 30px;
+}
+p {
+    font-size: 30px;
+    padding: 20px;
+}
+.header {
+    background-color: rgb(173,216,230);
+    color: rgb(0,0,255);
+    padding: 15px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.row {
+    background: url(img/line.png);
+}
+.menu {
+    width: 25%;
+    float: left;
+}
+.title-menu {
+    padding-left: 20px;
+    font-size: 30px;
+}
+.content {
+    margin-left: 27%;
+    background: url(img/ball.png) top right repeat-y,  
+    url(img/line_two.png);
+    padding: 20px;
+    overflow: hidden;
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.cart {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+.footer {
+    background-color: rgb(173,216,230);
+    color: rgb(0,0,255);
+    padding: 15px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}

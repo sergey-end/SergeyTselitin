@@ -1,0 +1,50 @@
+@media all and (max-width: 925px) {
+    .menu a  {
+        font-size: 26px;
+    }
+}
+
+@media all and (max-width: 825px) {
+    .menu a  {
+        font-size: 23px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .cart {
+        float: none;
+    }
+    .menu a {
+        font-size: 21px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .menu {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    h2 {
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    .content {
+        margin: 0 auto;
+    }
+    .cart {
+        float: left;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .cart {
+        float: none;
+    }
+    .cont_cart {
+        width: 300px;
+        margin: 0 auto;
+    }
+}

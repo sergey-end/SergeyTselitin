@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+            margin: 0 0 30px 0;
+        }
+        body {
+            font-size: 36px;
+        }
+        select {
+            font-size: 28px;
+            margin-left: 295px;
+            width: 350px;
+        }
+        input[type="text"] {
+            width: 850px;
+            margin-left: 170px;
+            font-size: 28px;
+        }
+        input[type="radio"]:first-child {
+            margin-left: 237px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+    </p>
+    <form action="http://fe.it-academy.by/ViewSlides.php?slide=13902&lect=72" method="POST">
+        <label>Название статьи:
+            <input type="text" name="Статья">
+        </label><br>
+        <label>Рубрика:
+            <select name="Рубрика">
+                <option value="Компьютеры">Компьютерная техника</option>
+                <option value="Графика">Графика и дизайн</option>
+                <option value="Програмы" selected>Програмирование</option>
+            </select>
+        </label><br>
+        <label>Публикация:
+            <input type="radio" name="Публикация" value="сайт">на сайте 
+            <input type="radio" name="Публикация" value="журнал">в журнале
+            <input type="radio" name="Публикация" value="сайт и журнал">на сайте и в журнале
+        </label><br>
+        <label>Разрешить комментарии:
+            <input type="checkbox" name="check">
+        </label><br>
+        <label>Текст статьи: <br>
+            <textarea name="Комментарий"></textarea>
+        </label><br>
+        <label>
+            <input type="submit" value="Опубликовать">
+        </label>
+    </form>
+</body>
+</html>
