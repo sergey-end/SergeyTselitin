@@ -8,23 +8,84 @@
         p {
             margin: 0 0 30px 0;
         }
+
         body {
             font-size: 36px;
         }
+
         select {
             font-size: 28px;
-            margin-left: 295px;
+            margin-left: 255px;
             width: 350px;
         }
-        input[type="text"] {
-            width: 850px;
-            margin-left: 170px;
+
+        .label_input-text label {
+            float: left;
+        }
+
+        .label_input-text div {
+            margin-left: 400px;
+        }
+
+        .label_input-text input {
+            width: 100%;
             font-size: 28px;
         }
-        input[type="radio"]:first-child {
-            margin-left: 237px;
 
+        input[type=checkbox] {
+            margin-left: 7px;
         }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+        }
+        label p {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        label p:first-child {
+            margin-left: 195px;
+        }
+        
+        .label_block {
+            display: block;
+        }
+
+        @media all and (max-width: 1113px) {
+            body {
+                width: 600px;
+                font-size: 26px;
+                margin: 0 auto;
+            }
+            .label_input-text div {
+                 margin-left: 0;
+            }
+            .label_input-text label {
+                float: none;
+            }
+            .label_input-text input {
+                font-size: 24px;
+            }
+            select {
+                display: block;
+                margin-left: 0;
+                margin-top: 5px;
+                font-size: 24px;
+            }
+            input[type=radio]:first-child {
+                margin-left: 0;
+            }
+            input[type=radio] {
+                margin-left: 0;
+            }
+            label p {
+            display: block;
+            margin-bottom: 5px;
+        }
+        }
+      
     </style>
     <title>Document</title>
 </head>
@@ -33,27 +94,37 @@
         Для публикации вашей статьи заполните, пожалуйста, следующую форму:
     </p>
     <form action="http://fe.it-academy.by/ViewSlides.php?slide=13902&lect=72" method="POST">
-        <label>Название статьи:
-            <input type="text" name="Статья">
-        </label><br>
+        <div class="label_input-text">
+            <label for="text">Название статьи:</label>
+            <div>
+                <input id="text" type="text" name="Статья">
+            </div>
+        </div>
+        
         <label>Рубрика:
             <select name="Рубрика">
-                <option value="Компьютеры">Компьютерная техника</option>
-                <option value="Графика">Графика и дизайн</option>
-                <option value="Програмы" selected>Програмирование</option>
+                <option value="Компьютеры">компьютерная техника</option>
+                <option value="Графика">графика и дизайн</option>
+                <option value="Програмы" selected>програмирование</option>
             </select>
-        </label><br>
-        <label>Публикация:
-            <input type="radio" name="Публикация" value="сайт">на сайте 
-            <input type="radio" name="Публикация" value="журнал">в журнале
-            <input type="radio" name="Публикация" value="сайт и журнал">на сайте и в журнале
-        </label><br>
+        </label>
+        <label class="label_block">Публикация:
+            <p>
+                <input type="radio" name="Публикация" value="сайт">на сайте
+            </p> 
+            <p>
+                <input type="radio" name="Публикация" value="журнал">в журнале
+            </p>
+            <p>
+                <input type="radio" name="Публикация" value="сайт и журнал">на сайте и в журнале
+            </p>
+        </label>
         <label>Разрешить комментарии:
             <input type="checkbox" name="check">
-        </label><br>
-        <label>Текст статьи: <br>
+        </label>
+        <label>Текст статьи:
             <textarea name="Комментарий"></textarea>
-        </label><br>
+        </label>
         <label>
             <input type="submit" value="Опубликовать">
         </label>

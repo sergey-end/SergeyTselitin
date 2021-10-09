@@ -1,0 +1,38 @@
+body {
+    font-size: 36px;
+}
+
+.biohazard {
+    position: absolute;
+}
+
+.Man-and-woman {
+    position: absolute;
+    left: 200px;
+}
+
+.Yin_and_Yang {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+.No_smoking {
+    position: absolute;
+    top: 65px;
+    left: 70px;
+}
+
+div {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+    margin: 0 auto;
+}
+
+.biohazard:hover, 
+.Man-and-woman:hover, 
+.Yin_and_Yang:hover, 
+.No_smoking:hover {
+    z-index: 1;
+}
