@@ -1,0 +1,28 @@
+input {
+    display: none;
+}
+
+label {
+    user-select: none;
+    position: relative;
+}
+
+label::before {
+    width: 24px;
+    height: 24px;
+    background-image: url(img/check.png);
+    position: absolute;
+    background-size: 100px;
+    background-position: 50px;
+}
+
+
+input:checked + label::before {
+    content: "";
+    background-position: 198px 25px;
+}
+
+input + label::before {
+    content: "";
+    background-position: 50px;
+}

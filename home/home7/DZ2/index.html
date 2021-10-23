@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        picture {
+            float: left;
+        }
+
+        p {
+            font-size: 36px;
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        span {
+            font-style: italic;
+            color: darkblue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <source srcset="img/png-115-100.png" media="(max-width: 900px)">
+        <source srcset="img/png-460-400.png" media="(max-width: 1200px)">
+        <source srcset="img/png-690-600.png" media="(max-width: 1500px)">
+        <img src="img/png-920-800.png" alt="Клубника">
+    </picture>
+    <p>
+        Тег <span>picture</span> дает нам дополнительные возможности управления выбором изоображения. Внутри тега 
+        <span>picture</span> через <span>source</span> можно указывать изоображения, которое будет выбираться 
+        благодаря медиаусловиям. Также в теге <span>picture</span> указывается тег <span>img</span>, который является 
+        обязательным.
+    </p>
+</body>
+</html>
