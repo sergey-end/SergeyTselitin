@@ -1,0 +1,96 @@
+@keyframes koleso {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+img {
+    width: 300px;
+    animation-name: koleso;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    background-color: #5e5373;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: #ece789;
+    margin: 30px;
+    font-size: 60px;
+    color: #5e5373;
+}
+
+.one:hover {
+    box-shadow: inset 0 0 0 23px #18b5a4;
+    transition: 0.7s;
+}
+
+.to:hover {
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+.three:hover {
+    border-radius: 70%;
+    transition: 0.7s;
+}
+
+.four:hover {
+    transform: rotateZ(20deg);
+    transition: 0.7s;
+}
+
+.five:hover {
+    opacity: 0;
+    transition: 2s;
+}
+
+.six:hover {
+    background-color: #18b5a4;
+    transition: 0.7s;
+}
+
+.seven:hover {
+    background-color: #18b5a4;
+    margin-top: -50px;
+    transition: 1s;
+}
+
+.eight:hover {
+    animation:abc .5s ease-in-out;
+}
+
+@keyframes abc {
+    0% {
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(-8px);
+    }
+    65%{
+        transform: translateX(4px);
+    }
+    80%{
+        transform: translateX(-4px);
+    }
+    95%{
+        transform: translateX(2px);
+    }           
+    100% {
+        transform: translateX(0px);
+    }
+    }
