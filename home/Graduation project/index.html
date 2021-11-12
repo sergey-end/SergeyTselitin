@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,21 +24,21 @@
             </div>
             <ul class="container-row_two">
                 <li>
-                    <a href="#">Залы</a>
+                    <a href="index.html#hall">Залы</a>
                 </li>
                 <li>
-                    <a href="#">О нас</a>
+                    <a href="index.html#about_us">О нас</a>
                 </li>
                 <li>
-                    <a href="#">Отзывы</a>
+                    <a href="index.html#reviews">Отзывы</a>
                 </li>
                 <li>
-                    <a href="#">Контакты</a>
+                    <a href="index.html#contacts">Контакты</a>
                 </li>
             </ul>
             <div class="container-row_three">
                 <div class="content_btn">
-                    <a class="tel_title" href="#"><i class="fa-solid fa-phone"></i>+7 (911) 554-... показать номер</a>
+                    <a class="tel_title" href="tel:+79115543344" title="telephone"><i class="fa-solid fa-phone"></i>+7 (911) 554-... показать номер</a>
                     <button class="title_btn">Забронировать</button>
                 </div>
             </div>
@@ -54,14 +54,14 @@
                 <p class="subtext_banner">Цены <span>от 900 рублей</span></p>
                 <button>Заказать обратный звонок</button>
             </div>
-            <img class="img_banner" src="img/banner.jpg" alt="banner">
+            <img class="img_banner" src="img/banner.jpg" alt="banner" title="bathhouse">
         </div>
     </div>  
     <div class="section-form">
         <div class="container container-form">
             <div class="row-form">
                 <h2>Узнать, свободна ли сауна</h2>
-                <form action="">
+                <form method="get">
                     <div class="container_input">
                         <input type="tel" name="tel" placeholder="Ваш телефон">
                         <input type="text" placeholder="Время посещения сауны">
@@ -69,29 +69,37 @@
                         <input type="submit" value="Проверить" class="submit_btn">
                     </div>
                     <label>
-                        <input type="checkbox"> Согласен на обработку и передачу персональных данных в соответствии <a href="#">с пользовательским соглашением</a>
+                        <input type="checkbox"> Согласен на обработку и передачу персональных данных в соответствии <a href="html/agreement.html" title="user agreement">с пользовательским соглашением</a>
                     </label>
                 </form>
             </div>
-            <img src="img/broom_embk.png" alt="broom">
+            <img src="img/broom_embk.png" alt="broom" title="bath accessories" class="accessories">
         </div>
     </div> 
     <div class="main">
         <div class="container">
             <div class="about_the_hall">
-                <h2>О зале</h2>
+                <h2 id="hall" class="about_the_hall-text">О зале</h2>
+                
+                    
+                <button onclick="changeColor()" class="slider-btn_left"><i class="fa-solid fa-angle-left"></i></button>
                 <div class="slider_img">
-                    <button class="slider-btn_left"><i class="fa-solid fa-angle-left"></i></button>
-                    <img src="img/hall-one.jpg" alt="hall-one">
-                    <img src="img/hall-two.jpg" alt="hall-two">
-                    <img src="img/hall-three.jpg" alt="hall-three">
-                    <img src="img/hall-four.jpg" alt="hall-four">
+                    <img src="img/hall-one.jpg" alt="hall-one" title="bath room" class="slider-img_left">
+                    <img src="img/hall-two.jpg" alt="hall-two" title="bath room" class="slider-img_left">
+                    <img src="img/hall-three.jpg" alt="hall-three" title="bath room" class="slider-img_left">
+                    <img src="img/hall-four.jpg" alt="hall-four" title="bath room" class="slider-img_left">
+
+                    <img src="img/banya-six.jpg" alt="banya-six" title="bath room" class="slider-img_left">
+                    <img src="img/banya-five.jpg" alt="banya-five" title="bath room" class="slider-img_left">
+                    <img src="img/bfour.jpg" alt="bfour" title="bath room" class="slider-img_left">
+                    <img src="img/banya-seven.jpg" alt="banya-seven" title="bath room" class="slider-img_left">
+               
                     <div class="slider_content">
                         <i class="fa-solid fa-camera"></i>
-                        <p class="slider_text"><a href="#">Еще фото</a></p>
-                    </div>
-                    <button class="slider-btn_right"><i class="fa-solid fa-angle-right"></i></button>
+                        <p class="slider_text"><a href="html/photo_gallery.html" title="more photos">Еще фото</a></p>
+                    </div>  
                 </div>
+                <button onclick="colorChange()" class="slider-btn_right"><i class="fa-solid fa-angle-right"></i></button>
                 <div class="downa-info"></div>
             </div>
             <div class="price-lists">
@@ -103,7 +111,7 @@
                     <h4 class="weekend">Пт-вс</h4>
                     <p class="price-text_three"><span>1500</span> рублей/час</p>
                     <p class="price-text_four"><span>3000</span> рублей/2 часа</p>
-                    <button><a href="#"> Получить скидку</a></button>
+                    <button><a href="#" title="get a discount"> Получить скидку</a></button>
                 </div>
                 <div class="price-lists_item">
                     <h4>Вместимость</h4>
@@ -115,26 +123,73 @@
                     <p class="around-the_clock">Круглосуточно</p>
                 </div>
                 <form class="price-lists_item">
-fe
+                    <div class="aqua-item">
+                        <img class="aqua-img" src="img/aqua.png" alt="aqua">
+                        <label for="aqua">
+                            <span>Аквазона</span>
+                        </label>
+                        <select name="aqua" id="aqua">
+                            <option disabled value="aqua">В бане две аквазоны: открытая летняя и закрытая всесезонная. На 32-х тысячах квадратных метров разместились 2 водных детских городка с бассейнами-лягушатниками, 11 водных горок, гидромассажные пушки, джакузи, гейзеры, фонтаны, тропический аттракцион «Дождевой грот», «ленивая река» с легким течением, волновой бассейн с настоящим морским прибоем, тренажер для сёрфинга, японские бани-бочки фурако, а также паровые кедровые фитобочки.</option>
+                        </select>
+                    </div>
+                    <div class="armchair-item">
+                        <img class="armchair-img" src="img/armchair.png" alt="armchair">
+                        <label for="armchair">
+                            <span>Комната отдыха</span>
+                        </label>
+                        <select name="armchair" id="armchair">
+                            <option disabled value="armchair">В комнате отдыха можно расположить много разных вещей, которые необходимы во время посещения бани. Например, какую-нибудь одежду, полотенца и другие подобные предметы.</option>
+                        </select>
+                    </div>
+                    <div class="spoon-item">
+                        <img class="spoon-img" src="img/spoon.png" alt="spoon">
+                        <label for="spoon">
+                            <span>Питание/наптики</span>
+                        </label>
+                        <select name="spoon" id="spoon">
+                            <option disabled value="spoon">Термические нагрузки на организм непременно сопровождаются потоотделением и выделением солей. Водно-солевой баланс в организме необходимо регулировать, а потому необходимо много пить. Подойдут морсы, компоты, травяные чаи, вода, квас. Можно выпить кружку пива, но не более. Более крепкий алкоголь недопустим. Утолить голод, который будет возникать, помогут легкие закуски: вареные креветки, овощи, фрукты, орехи, сыр, канапе, можно съесть немного легкого салата. Не обязательно брать множество разных закусок в баню и все их там съесть, рассчитывайте на количество человек. Главное правило – не объедаться.</option>
+                        </select>
+                    </div>
+                    <div class="note-item">
+                        <img class="note-img" src="img/note.png" alt="note">
+                        <label for="note">
+                            <span>Оборудование</span>
+                        </label>
+                        <select name="note" id="note">
+                            <option disabled value="note">Ежедневно (кроме воскресенья и понедельника) с 20:00 до 22:00 в ресторане играет живая музыка (цимбалы, скрипка, баян). Стоимость входных билетов в это время — 3 рубля.</option>
+                        </select>
+                    </div>
+                    <div class="add-item">
+                        <img class="add-img" src="img/add.png" alt="add">
+                        <label for="add">
+                            <span>Оборудование</span>
+                        </label>
+                        <select name="add" id="add">
+                            <option disabled value="add">Есть веники, Березовый, Дубовый, Парковка, Со своим веником, С коттеджем на сутки (+5000 руб.), Банкетный зал (+1500 руб.), Вместимость: 120 чел., Гостиница (+1900 руб.), Беседка (Летняя веранда) (+1500 руб.), С выходом к реке, Тапочки (+50 руб.), Простыни (+50 руб.), Полотенца (+100 руб.), Мыло, Посуда</option>
+                        </select>
+                    </div>
                 </form>
             </div>
             <div class="about-us">
-                <div class="about-us-item">
-                    <h2>О нас</h2>
+                <div class="about-us-item about-us-item-one">
+                    <h2 id="about_us">О нас</h2>
                     <p>Сауна "Лукоморье" приглашает в гости не только гостей, но и жителей города насладиться парными процедурами  финской парной. Мы знает толк в банном отдыхе, поэтому все наши гости останутся довольны.приглашает в гости всех любителей качественного отдыха, окунуться в мир релакса и тепла в комфортной уютной обстановке. Наше заведение имеет все необходимое для полноценного отдыха.У нас можно не только отдохнуть большой компанией, но и организовать любое праздничное событие. Корпоративы и дни рождения, встречи с деловыми партнерами – у нас задуманное мероприятие пройдет на все 100%.</p>
                 </div>
+                <button  onclick="elementOffset()" class="about-btn_left"><i class="fa-solid fa-angle-left"></i></button>
                 <div class="about-us-item about-us-item_flex">
-                    <button class="about-btn_left"><i class="fa-solid fa-angle-left"></i></button>
-                    <img src="img/about-us.jpg" alt="about-us">
-                    <button class="about-btn_right"><i class="fa-solid fa-angle-right"></i></button>
+                    
+                    <img src="img/about-us.jpg" alt="about-us" title="view inside the bathhouse" class="about-us-img">
+                    <img src="img/banner.jpg" alt="about-us" title="banner" class="about-us-img">
+                    
                 </div>
+                <button onclick="elementSet()" class="about-btn_right"><i class="fa-solid fa-angle-right"></i></button>
             </div>
             <div class="stocks">
                 <h2>Актуальные скидки и акции</h2>
                 <div class="stocks-row">
                     <div class="stocks-row_item">
                         <button class="stocks-btn_green">Акция</button>
-                        <img src="img/stocks_one.jpg" alt="stocks_one">
+                        <img src="img/stocks_one.jpg" alt="stocks_one" title="discounts on the sauna">
                         <div class="stocks-content">
                             <span>30%</span>
                             <div>
@@ -142,11 +197,11 @@ fe
                                 <p class="stocks-content_subtitle">в финскую сауну</p>
                             </div>
                         </div>
-                        <button class="stocks-btn_brown">Подробнее</button>
+                        <button class="stocks-btn_brown"><a href="html/discounts.html">Подробнее</a></button>
                     </div>
                     <div class="stocks-row_item">
                         <button class="stocks-btn_green">Спецпредложение</button>
-                        <img src="img/stocks_two.jpg" alt="stocks_two">
+                        <img src="img/stocks_two.jpg" alt="stocks_two" title="discounts on the sauna">
                         <div class="stocks-content">
                             <p class="stocks-text_hours">4-й час</p>
                             <div>
@@ -154,11 +209,11 @@ fe
                                 <p class="stocks-text_day">с понедельника по четверг</p>
                             </div>
                         </div>
-                        <button class="stocks-btn_brown">Подробнее</button>
+                        <button class="stocks-btn_brown"><a href="html/discounts.html">Подробнее</a></button>
                     </div>
                     <div class="stocks-row_item">
                         <button class="stocks-btn_green">Акция</button>
-                        <img src="img/stocks_three.jpg" alt="stocks_three">
+                        <img src="img/stocks_three.jpg" alt="stocks_three" title="discounts on the sauna">
                         <div class="stocks-content">
                             <span>15%</span>
                             <div>
@@ -166,7 +221,7 @@ fe
                                 <p class="stocks-text_birthday">в день рождения</p>
                             </div>
                         </div>
-                        <button class="stocks-btn_brown">Подробнее</button>
+                        <button class="stocks-btn_brown"><a href="html/discounts.html">Подробнее</a></button>
                     </div>
                 </div>
             </div>
@@ -175,7 +230,7 @@ fe
     <div class="consultation">
         <div class="container container-consultation">
             <div class="consultation_img">
-                <img src="img/consultation.png" alt="consultation">
+                <img src="img/consultation.png" alt="consultation" class="consul_img">
             </div>
             <div class="container-consultation_item">
                 <h3>Нужна консультация?</h3>
@@ -185,7 +240,8 @@ fe
                     <input type="tel" placeholder="Вашт телефон" class="consultation_input-tel">
                     <div>
                         <label class="consultation_label" for="check">
-                        <input id="check" class="consultation_input-checkbox" type="checkbox"><p>Согласен на обработку и передачу персональных данных в соответствии с <a href="#">пользовательским соглашением</a></p> 
+                        <input id="check" class="consultation_input-checkbox" type="checkbox"><p>Согласен на обработку и передачу персональных данных в соответствии с <a href="html/agreement.html">пользовательским соглашением</a></p> 
+                        </label>
                     </div>
                     <input type="submit" value="Перезвоните мне" class="consultation_input-submit">
                 </div>
@@ -194,60 +250,60 @@ fe
     </div>
     <div class="feedback">
         <div class="container container-feedback">
-            <h2>Отзывы</h2>
-            <div class="feedback-row">
-                <button class="feedback-btn_left"><i class="fa-solid fa-angle-left"></i></button>
-                <div class="feedback-row-item">
-                    <div class="row_name">
-                        <p class="feedback_name">Светлана</p>
-                        <div>
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-two.png" alt="star">
+            <h2 id="reviews">Отзывы</h2>
+                <div class="feedback-row">
+                    <button class="feedback-btn_left"><i class="fa-solid fa-angle-left"></i></button>       
+                    <div class="feedback-row-item">
+                        <div class="row_name">
+                            <p class="feedback_name">Светлана</p>
+                            <div>
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-two.png" alt="star">
+                            </div>
                         </div>
+                        <p class="feedback_text">Сауна реально крутая и цена достаточно приемлимая для заведения такого комфорта</p>
+                        <p class="feedback_data">12.08.2021</p>
                     </div>
-                    <p class="feedback_text">Сауна реально крутая и цена достаточно приемлимая для заведения такого комфорта</p>
-                    <p class="feedback_data">12.08.2021</p>
-                </div>
-                <div class="feedback-row-item">
-                    <div class="row_name-two">
-                        <p class="feedback_name-two">Александр</p>
-                        <div>
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
+                    <div class="feedback-row-item">
+                        <div class="row_name-two">
+                            <p class="feedback_name-two">Александр</p>
+                            <div>
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                            </div>
                         </div>
+                        <p class="feedback_text-two">Были два раза, и оба раза остались очень довольны! Лучше сауны пока не встретили. Во-первых, частный дом, там, кроме вашей компании и самого хозяина (который всё объяснил и ушел) никого не будет. Во-вторых, просторный стол, караоке, два этажа, две комнаты отдыха, ...читать полностью</p>
+                        <p class="feedback_data-two">03.05.2021</p>
                     </div>
-                    <p class="feedback_text-two">Были два раза, и оба раза остались очень довольны! Лучше сауны пока не встретили. Во-первых, частный дом, там, кроме вашей компании и самого хозяина (который всё объяснил и ушел) никого не будет. Во-вторых, просторный стол, караоке, два этажа, две комнаты отдыха, ...читать полностью</p>
-                    <p class="feedback_data-two">03.05.2021</p>
-                </div>
-                <div class="feedback-row-item">
-                    <div class="row_name-three">
-                        <p class="feedback_name-three">Ольга</p>
-                        <div>
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-one.png" alt="star">
-                            <img src="img/Star-two.png" alt="star">
+                    <div class="feedback-row-item">
+                        <div class="row_name-three">
+                            <p class="feedback_name-three">Ольга</p>
+                            <div>
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-one.png" alt="star">
+                                <img src="img/Star-two.png" alt="star">
+                            </div>
                         </div>
+                        <p class="feedback_text-three">Отдыхали в данной сауне 6.02.2021 , нас было 3 взрослых и 3 детей. Сауна очень понравилась!!!! Парилка супер, очень жарко, нагрелись от души!!!! Бассейн не очень большой, но нам хватило...ребятишки накупались с удовольствием ...читать полностью</p>
+                        <p class="feedback_data-three">12.08.2021</p>
                     </div>
-                    <p class="feedback_text-three">Отдыхали в данной сауне 6.02.2021 , нас было 3 взрослых и 3 детей. Сауна очень понравилась!!!! Парилка супер, очень жарко, нагрелись от души!!!! Бассейн не очень большой, но нам хватило...ребятишки накупались с удовольствием ...читать полностью</p>
-                    <p class="feedback_data-three">12.08.2021</p>
+                    <button class="feedback-btn_right"><i class="fa-solid fa-angle-right"></i></button>        
                 </div>
-                <button class="feedback-btn_right"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
             <div class="feedback_row-bnt">
-                <button class="feedback_row-bnt-left"><a href="#">Смотреть все отзывы</a></button>
-                <button class="feedback_row-bnt-right"><a href="#">Смотреть все отзывы</a></button>
+                <a href="html/reviews.html"><button class="feedback_row-bnt-left">Смотреть все отзывы</button></a>
+                <button class="feedback_row-bnt-right">Оставить отзыв</button>
             </div>
         </div>
     </div>
-    <div class="cart">
+    <div class="cart" id="contacts">
         <div class="container">
             <div class="container_cart-item">
                 <img src="img/Vector.png" alt="Vector" class="img_vector_cart-item">
@@ -257,11 +313,11 @@ fe
                 <img src="img/time.png" alt="time" class="img_time_cart-item">
                 <p class="time-png"><span>График работы:</span> круглосуточно</p>
                 <div class="img_row-soc">
-                    <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
-                    <a href="#"><img src="img/telegram.png" alt="telegram"></a>
-                    <a href="#"><img src="img/viber.png" alt="viber"></a>
+                    <a href="https://www.whatsapp.com/" title="whatsapp"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <a href="https://telegram.org/" title="telegram"><img src="img/telegram.png" alt="telegram"></a>
+                    <a href="https://www.viber.com/ru/" title="viber"><img src="img/viber.png" alt="viber"></a>
                 </div>
-                <button><a href="#">Заказать обратный звонок</a></button>
+                <button>Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -270,5 +326,6 @@ fe
             <p>CОЗДАНИЕ И ПРОДВИЖЕНИЕ САЙТА - ПРИОРИТЕТ | ОБОРУДОВАНИЕ ДЛЯ САУН</p>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
